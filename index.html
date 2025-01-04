@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="image/loogp.jpg" alt="Restaurant Logo" class="logo-img">
+                <span class="restaurant-name">Filsan Foos Restaurunt </span>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#register" class="reserve-btn">Reserve</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#" id="quick-contact" class="quick-contact-btn">
+                    <i class="fas fa-phone"></i>
+                    Quick Contact
+                </a></li>
+            </ul>
+        </nav>
+
+        <div id="contact-popup" class="contact-popup">
+            <div class="popup-content">
+                <span class="close-popup">&times;</span>
+                <h3>Contact Information</h3>
+                <div class="popup-contact-details">
+                    <p><i class="fas fa-phone"></i> +252 61-5555555</p>
+                    <p><i class="fas fa-envelope"></i> info@baabulraqis.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Wadada Maka Al-mukarama, Muqdisho, Somalia</p>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <section id="home" class="hero">
+    <!-- <img src="image/bacgroun.jpg" alt=""> -->
+        <div class="hero-content">
+            <h1>Welcome to<br>Filzan Foos Restaurant</h1>
+            <p>Experience the art of culinary excellence</p>
+            <button class="cta-button">Book a Table</button>
+        </div>
+    </section>
+    
+
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <!-- Somali Dishes -->
+            <div class="menu-item">
+                <img src="image/111.jpg" alt="Rice with Meat">
+                <h3>Rice with Meat</h3>
+                <p>Flavorful rice served with tender goat meat</p>
+                <span class="price">$15.99</span>
+                <button class="order-now-btn" data-item="bariis-hilib" data-price="15.99">Order</button>
+            </div>
+            
+            <div class="menu-item">
+                <img src="image/2222.jpg" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>Delicious pasta served with meat sauce</p>
+                <span class="price">$13.99</span>
+                <button class="order-now-btn" data-item="baasto" data-price="13.99">Order</button>
+            </div>
+            
+            <div class="menu-item">
+                <img src="image/333.jpg" alt="Sambuus">
+                <h3>Sambuus</h3>
+                <p>Meat-filled pastries (6 pieces)</p>
+                <span class="price">$12.99</span>
+                <button class="order-now-btn" data-item="sambuus" data-price="12.99">Order</button>
+            </div>
+            
+            <div class="menu-item">
+                <img src="image/4444.jpg" alt="Meat Suqaar">
+                <h3>Meat Suqaar</h3>
+                <p>Diced meat sautéed with onions and peppers</p>
+                <span class="price">$16.99</span>
+                <button class="order-now-btn" data-item="hilib-suqaar" data-price="16.99">Order</button>
+            </div>
+            
+            <div class="menu-item">
+                <img src="image/5566.jpg" alt="Fish">
+                <h3>Grilled Fish</h3>
+                <p>Flavorful grilled fish</p>
+                <span class="price">$18.99</span>
+                <button class="order-now-btn" data-item="kaluun" data-price="18.99">Order</button>
+            </div>
+            
+            <div class="menu-item">
+                <img src="image/666.jpg" alt="Canjeelo">
+                <h3>Canjeelo with Sauce</h3>
+                <p>Warm flatbread served with special sauce</p>
+                <span class="price">$10.99</span>
+                <button class="order-now-btn" data-item="canjeelo" data-price="10.99">Order</button>
+            </div>
+            
+            <!-- Western Dishes -->
+            <div class="menu-item">
+                <img src="image/888.jpg" alt="Special Pasta">
+                <h3>Special Pasta</h3>
+                <p>Fresh homemade pasta with signature sauce</p>
+                <span class="price">$18.99</span>
+                <button class="order-now-btn" data-item="pasta" data-price="18.99">Order</button>
+            </div>
+            
+            <div class="menu-item">
+                <img src="image/555.jpg" alt="Grilled Salmon">
+                <h3>Grilled Salmon</h3>
+                <p>Fresh Atlantic salmon with seasonal vegetables</p>
+                <span class="price">$24.99</span>
+                <button class="order-now-btn" data-item="salmon" data-price="24.99">Order</button>
+            </div>
+        </div>
+    </section>
+
+     <section id="about" class="about-section">
+         <div class="about-container">
+            <div class="about-content">
+                 <h2 class="about-toggle">About Us</h2>
+                <div class="about-details hidden">
+                    <p class="about-description">Welcome to Baabul Raqiis Restaurant, where Somali flavors meet modern cuisine. We take pride in offering:</p>
+                    <ul class="about-features">
+                        <li>🌟 High-quality flavorful dishes</li>
+                        <li>🍽️ Premium service</li>
+                        <li>🌺 Beautiful and comfortable atmosphere</li>
+                        <li>👨‍🍳 Experienced chefs</li>
+                    </ul>
+                    <p class="about-mission">Our mission is to create an unforgettable culinary experience using the highest quality ingredients and exceptional service.</p>
+                </div>
+            </div>
+            <div class="about-image hidden">
+                <img src="image/dyr.jpg" alt="Restaurant Interior">
+            </div>
+        </div>
+     </section>
+
+    <section id="register" class="register-section">
+        <h2>Make a Reservation</h2>
+        <form class="reservation-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <select id="guests" name="guests" required>
+                    <option value="">Select number of guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6+ People</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="special-requests">Special Requests:</label>
+                <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-button">Make Reservation</button>
+        </form>
+    </section>
+
+    <section id="order" class="order-section">
+        <h2>Order Food</h2>
+        <div class="section-description">
+            <!-- <p>Order your delicious food for home delivery - Free delivery within Mogadishu</p> -->
+        </div>
+        <form class="order-form">
+            <h3 class="form-title">Order Form</h3>
+            <div class="form-group">
+                <label for="customer-name">Name:</label>
+                <input type="text" id="customer-name" name="customer-name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="customer-phone">Phone:</label>
+                <input type="tel" id="customer-phone" name="customer-phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="delivery-address">Address:</label>
+                <textarea id="delivery-address" name="delivery-address" rows="3" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="food-items">Select Items:</label>
+                <select id="food-items" name="food-items" multiple required>
+                    <!-- Traditional Dishes -->
+                    <option value="bariis-hilib">Rice with Meat - $15.99</option>
+                    <option value="baasto">Pasta - $13.99</option>
+                    <option value="canjeelo">Canjeelo with Sauce - $10.99</option>
+                    <option value="sambuus">Sambuus (6 pieces) - $12.99</option>
+                    <option value="hilib-suqaar">Meat Suqaar - $16.99</option>
+                    <option value="kaluun">Grilled Fish - $18.99</option>
+                    <option value="chicken-suqaar">Chicken Suqaar - $14.99</option>
+                    <option value="soor">Soor with Soup - $13.99</option>
+                    <!-- Western Dishes -->
+                    <option value="pasta">Special Pasta - $18.99</option>
+                    <option value="salmon">Grilled Salmon - $24.99</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="">Select payment method</option>
+                    <option value="cash">Cash</option>
+                    <option value="evc">EVC Plus</option>
+                    <option value="zaad">ZAAD</option>
+                    <option value="card">Credit Card</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="order-notes">Additional Notes:</label>
+                <textarea id="order-notes" name="order-notes" rows="4"></textarea>
+            </div>
+            
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-item">
+                    <span>Food Cost:</span>
+                    <span id="food-cost">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Delivery:</span>
+                    <span id="delivery-cost">$5.00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total:</span>
+                    <span id="total-cost">$0.00</span>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-button">Confirm Order</button>
+       
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section hidden">
+        <div class="contact-container">
+            <div class="contact-content">
+                <h2 class="contact-toggle">Contact Us</h2>
+                <div class="contact-details">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-text">
+                                <h3>Our Location</h3>
+                                <p>Wadada Maka Al-mukarama, Muqdisho, Somalia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-text">
+                                <h3>Phone Number</h3>
+                                <p>+252 61-5555555</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <h3>Email Address</h3>
+                                <p>info@baabulraqis.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-text">
+                                <h3>Opening Hours</h3>
+                                <p>Monday - Sunday: 7:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email"
+                                 required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="width: 100%;height:100px;">
+        <p style="margin-top: 10px;">&copy; 2024 Fine Dining Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
