@@ -441,7 +441,7 @@ footer {
 }
 
 .contact-form .submit-button:hover {
-    background-color: #5f361a;
+    background-color: #555f1a;
 }
 
 /* Responsive Design */
@@ -556,7 +556,7 @@ footer {
 }
 
 .close-popup:hover {
-    color: #000;
+    color: #b84c4c;
 }
 
 .popup-contact-details {
