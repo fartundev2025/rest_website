@@ -2,7 +2,7 @@
 :root {
     --primary-color: #6fa0d1;
     --secondary-color:#633314;
-    --accent-color: #633314;
+    --accent-color: hsl(24, 66%, 23%);
     --text-light: #ecf0f1;
     --text-dark: #2c3e50;
     --background-light: #f9f9f9;
